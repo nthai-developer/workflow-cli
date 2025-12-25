@@ -27,7 +27,7 @@ It prevents "lazy coding" and hallucinations by enforcing a **State-Machine driv
 Run this command to install the tool directly from the repository (you only need to do this once):
 
 ```bash
-uv tool install --force git+[https://github.com/nthai-developer/workflow-cli.git](https://github.com/nthai-developer/workflow-cli.git)
+uv tool install --force https://github.com/nthai-developer/workflow-cli.git
 
 ```
 
@@ -52,8 +52,7 @@ Add the following configuration to your IDE's MCP settings file (e.g., `/Users/a
 {
   "mcpServers": {
     "workflow-guard": {
-      "command": "uv",
-      "args": ["tool", "run", "workflow-cli"]
+      "command": "workflow-cli"
     }
   }
 }
@@ -130,8 +129,8 @@ If you want to contribute to this tool:
 
 ```bash
 # Clone the repo
-git clone [https://github.com/nthai-developer/workflow-cli.git](https://github.com/nthai-developer/workflow-cli.git)
-cd ai-workflow-core
+git clone https://github.com/nthai-developer/workflow-cli.git
+cd workflow-cli
 
 # Install dependencies in editable mode
 uv venv

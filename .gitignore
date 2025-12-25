@@ -1,0 +1,61 @@
+# --- Python Basics ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Virtual Environments (uv creates .venv) ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Environment Variables & Secrets (CRITICAL) ---
+# Chặn tất cả file .env chứa key thật
+.env
+.env.*
+!.env.example
+# File config local user (nếu lỡ tay tạo trong project)
+.ai_workflow_env
+
+# --- Distribution / Packaging ---
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# --- Testing & Code Quality ---
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+junit/
+
+# --- IDE & Editor Settings ---
+# VS Code / Cursor
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains / PyCharm
+.idea/
+
+# Mac / Linux System Files
+.DS_Store
+*.swp
+
+# --- Project Specifics ---
+# Logs nếu có ghi log ra file
+*.log
+logs/
+
+# Local database (nếu dùng sqlite cho state)
+*.db
+*.sqlite3
+
+# --- Backup Files ---
+*.bak
+*.tmp
